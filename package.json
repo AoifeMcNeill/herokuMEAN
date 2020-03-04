@@ -1,0 +1,20 @@
+{
+    "name": "herokuNode",
+    "version": "1.0.0",
+    "description": "heroku node application",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Wrror: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AoifeMcNeill/herokuMEAN.git"
+    },
+    "author": "Aoife McNeill",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AoifeMcNeill/herokuMEAN/issues"
+    },
+    "homepage": "https://github.com/AoifeMcNeill/herokuMEAN#readme"
+}
