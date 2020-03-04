@@ -1,18 +1,22 @@
 var http = require("http");
-
-const PORT = process.env.PORT || 3000;
+fs = require ('fs');
+const PORT = process.env.PORT || 8080;
 
 http.createServer(function (request, response){
     // Send the HTTP header
     // HTTP Status: 200: OK
-    // Content Type: text/plain
-    response.writeHead(200, {'Content-Type': 'text/plain'});
+    // Content Type: text/html
 
-    // Send the response body body as "Hello World"
-    response.end('Hello World\n');
-}).listen(PORT, () => {
-    console.log('Our app is running on port ${ PORT }');
-});
+    // write to our server. set configuration for the response
+    response.writeHead(200, {
+        'Content-Type': 'text/html',
+        'Access-Control-Allow-Origin' : '*'
+    });
+
+    var readStream = fs.createReadStream(_dirname + '/index.html');
+    //send a message
+    readStream.pipe(response);
+}).listen(PORT);
 
 // Console will print the message
 console.log('Server running at http://127.0.0.1:8080/');
