@@ -13,7 +13,7 @@ http.createServer(function (request, response){
         'Access-Control-Allow-Origin' : '*'
     });
 
-    var readStream = fs.createReadStream(_dirname + '/index.html');
+    var readStream = fs.createReadStream(__dirname + '/index.html');
     //send a message
     readStream.pipe(response);
 }).listen(PORT);
