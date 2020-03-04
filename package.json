@@ -12,9 +12,8 @@
         "url": "git+https://github.com/AoifeMcNeill/herokuMEAN.git"
     },
     "author": "Aoife McNeill",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/AoifeMcNeill/herokuMEAN/issues"
+    "dependencies": {
+        "express": "~4.13.4"
     },
-    "homepage": "https://github.com/AoifeMcNeill/herokuMEAN#readme"
+    "license": "ISC"
 }
