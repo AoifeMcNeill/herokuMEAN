@@ -41,7 +41,7 @@ adminRouter.use(function(req, res, next){
 });
 
 //route with parameters (http://localhost:PORT/admin/users/:name)
-adminRouter.get('/users/name', function(req, res){
+adminRouter.get('/users/:name', function(req, res){
     res.send('hello' + req.params.name + '!');
 });
 
